@@ -29,7 +29,7 @@ The original configuration, especially setting the "Quirks" to the correct value
 
 * **config.emergency.plist** → Shows boot options (i.e. picker) with **all** Auxiliary tools displayed; after a brief time-out, continues **verbose** `-v` booting to default drive; Wi-Fi and BTLE kexts are disabled; debug logging is enabled, including boot arguments being present. Keys `HideAuxiliary` set to false, `ShowPicker` set to true, `Timeout` set to 5 seconds. Additionally, `SecureBootModel` is disabled, `PanicNoKextDump`, `AppleDebug`, `ApplePanic`, `AllowNvramReset`, `AllowSetDefault` and `AllowToggleSip` are now enabled. Special boot arguments `keepsyms=1`, `debug=0x100`, `npci=0x2000` and `msgbuf=1048576` are set. **This file is notably used for USB installers.**
 
-A **chime** configuration variant has been recently added, which plays the typical Apple boot sound upon each start or restart. The respective configurations only switch on the boot-time audio device by setting 
+A **chime** configuration variant has been recently added, which plays the typical Apple boot sound upon each start or restart. The respective configurations only switch on the boot-time audio device by setting
 `AudioSupport` to `true` and enabling the respective `AudioDxe.efi` firmware driver. Comparing the config files side-by-side will reveal these two distinct changes.
 
 All configuration files have been **validated** with `ocvalidate` tool that has been included in the OpenCore releases since version 0.7.1.
@@ -39,15 +39,15 @@ All configuration files have been **validated** with `ocvalidate` tool that has 
 
 <br/>Firstly, `debug=0xH` (where H is hexadecimal number up to 4 digits) lets you set kernel debugging flags from this list:
 
-* `DB_HALT               0x01`   - Halt at boot-time and wait for debugger attach (gdb)
-* `DB_PRT                0x02`   - Send kernel debugging `printf` output to console
-* `DB_NMI                0x04`   - Drop into debugger on a non-maskable interrupt i.e. NMI (Command–Power, Command-Option-Control-Shift-Escape or interrupt switch)
-* `DB_KPRT               0x08`   - Send kernel debugging `kprintf` output to serial port
-* `DB_KDB                0x10`   - Make ddb (kdb) the default debugger (requires a custom kernel)
-* `DB_SLOG               0x20`   - Output certain diagnostic information to the system log
-* `DB_ARP                0x40`   - Allow debugger to ARP and route (allows debugging across routers and removes the need for a permanent ARP entry, but is a potential security hole) not available in all kernels
-* `DB_KDP_BP_DIS         0x80`   - Support old versions of gdb on newer systems
-* `DB_LOG_PI_SCRN        0x100`  - Disable graphical panic dialog
+* `DB_HALT                 0x01` - Halt at boot-time and wait for debugger attach (gdb)
+* `DB_PRT                  0x02` - Send kernel debugging `printf` output to console
+* `DB_NMI                  0x04` - Drop into debugger on a non-maskable interrupt i.e. NMI (Command–Power, Command-Option-Control-Shift-Escape or interrupt switch)
+* `DB_KPRT                 0x08` - Send kernel debugging `kprintf` output to serial port
+* `DB_KDB                  0x10` - Make ddb (kdb) the default debugger (requires a custom kernel)
+* `DB_SLOG                 0x20` - Output certain diagnostic information to the system log
+* `DB_ARP                  0x40` - Allow debugger to ARP and route (allows debugging across routers and removes the need for a permanent ARP entry, but is a potential security hole) not available in all kernels
+* `DB_KDP_BP_DIS           0x80` - Support old versions of gdb on newer systems
+* `DB_LOG_PI_SCRN         0x100` - Disable graphical panic dialog
 * `DB_KERN_DUMP_ON_PANIC 0x0400` - Causes the kernel to core dump when the system panics
 * `DB_KERN_DUMP_ON_NMI   0x0800` - Causes the kernel to core dump when the user triggers an NMI
 * `DB_DBG_POST_CORE      0x1000` - Controls the kernel's behavior after dumping core in response to an NMI (DB_KERN_DUMP_ON_NMI); if the user triggers an NMI and this flag is clear, the kernel will dump core and then continue (conversely, if this flag is set the kernel will dump core and then wait for a debugger connection)

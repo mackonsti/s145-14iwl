@@ -183,7 +183,7 @@ With the injection of `SSDT-PLUG.aml` via OpenCore, we can verify that Power Man
 
 ![PowerGadget](Various/PowerGadget.png)
 
-## Changes Brought About by macOS 12
+## Changes Brought About by macOS 12 and macOS 13
 
 MacOS 12.x _Monterey_ has brought an important change in OpenCore configuration for BTLE, namely the required removal of **IntelBluetoothInjector.kext** and its replacement by **BlueToolFixup.kext** found inside [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM) package. The main **IntelBluetoothFirmware.kext** remains active and must still be loaded, as done previously.
 
@@ -191,17 +191,15 @@ MacOS 12.x _Monterey_ has brought an important change in OpenCore configuration 
 
 There is also a distinct version of [AirportItlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) compiled for _Monterey_ only that has to be installed, replacing the Big Sur version of the kext _without_ any OpenCore configuration changes, however.
 
+![Ventura](Various/Ventura.png)
+
 ![Monterey](Various/Monterey.png)
 
 ## Changes Brought About by macOS 11
 
 An analysis of all the novelties that _Big Sur_ brings are detailed over at [Dortania](https://dortania.github.io/hackintosh/updates/2020/11/12/bigsur-new.html).
 
-![Ventura](Various/Ventura.png)
-
 ![BigSur](Various/BigSur.png)
-
-![Catalina](Various/Catalina.png)
 
 ## Using VMware Fusion 12 and Windows 10 on SATA drive
 
