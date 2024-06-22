@@ -1,0 +1,71 @@
+Flash BIOS update - Flash from Operating System version for Lenovo IdeaPad S145-14/15IWL&340C-15IWL&V140-14IWL&XiaoXin-14IWL QC 2019/BS145-15IWL/V14-IWL&V15-IWL
+Version ASCN51WW
+
+Applicable OS Win10(64-bit)
+
+Installation README
+Updated Date: 2021-05-14
+This package updates the basic input/output system (BIOS) on Lenovo IdeaPad S145-14/15IWL&340C-15IWL&V140-14IWL&XiaoXin-14IWL QC 2019/BS145-15IWL/V14-IWL&V15-IWL
+BIOS, abbreviation of Basic Input£¯Output System, is integrated in ROM chip on main board, which contains the basic input/output program, system configuration information, system startup self-check and pre-setup programs. BIOS provides most basic low-level hardware operations; it is the connection between software and hardware, and interfacing window of hardware and operating system.
+
+Note: Make note of any settings you have changed in the BIOS Configuration Utility. These settings may have to be re-entered after updating the BIOS.
+
+Attention: 1.Do not power off or restart your computer during the BIOS flashing process, which will cause serious damage and improper functioning of your computer.
+                2. This version of the BIOS will auto load default, so the options your change in setup will be set to defult value.
+
+Print this file so that you can refer to it during the installation.
+
+Downloading the package
+=======================
+1. Click the file link to download the file from the web page.
+2. When prompted, select a drive and directory in which to save the downloaded file.
+
+Installing the package in Windows.
+======================
+Please follow bellowed step to update BIOS in Windows:
+1.  Locate the file ASCN51WW.exe that has been downloaded.
+2.  Double click the ASCN51WW.exe icon.
+3.  Follow wizard UI by making sure what BIOS to flash and flash on what platform
+4.  Finally press Install & Finish to start flashing. During the process, you are advised not to turn off the computer.
+5.  When the update finishes, the computer will automatically reboot for the changes to take effect.
+
+Updated Information:
+
+Latest Version BIOS fixed all merged issues from previous.
+
+Summary of changes
+==================
+ASCN51WW:
+BIOS Notification    :
+1. Fixed
+    1) N/A
+2. Add
+    1) N/A
+3. Modified 
+   1)Enhancement to address security vulnerability 2020-24511/24512.
+                        
+EC Notification      :
+1. Fixed
+  1) N/A.
+2. Add
+  1) N/A.
+3. Modified
+  1)  Rename.
+
+
+Trademarks
+==========
+IdeaPad and IdeaCentre are registered trademarks of Lenovo.
+
+Microsoft and Windows are trademarks of Microsoft Corporation in 
+the United States, other countries, or both. Other company, product, 
+and service names may be trademarks or service marks of others.
+
+THIS DOCUMENT IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  
+WE DISCLAIM ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED, 
+INCLUDING WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF FITNESS 
+FOR A PARTICULAR PURPOSE AND MERCHANTABILITY WITH RESPECT TO THE 
+INFORMATION IN THIS DOCUMENT.  BY FURNISHING THIS DOCUMENT, WEGRANT 
+NO LICENSES TO ANY PATENTS OR COPYRIGHTS.
+
+Copyright (c) Lenovo 2008, all rights reserved
